@@ -118,10 +118,10 @@ More detailed documentation can be found on the
 
 ## Alright, brain overload already. I'm ready to play
 
-Run the command below in the #general channel to check it out.
+Run the command below in the #general channel of [Slack](http://slack.com) to check it out. Note: The name 'spec' below matches whatever variable is set via the variable HUBOT\_SLACK\_BOTNAME.
 
 ```
-hubot hello
+spec hello
 ```
 
 ### Deploying to UNIX or Windows
