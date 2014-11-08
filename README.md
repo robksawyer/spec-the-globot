@@ -82,7 +82,7 @@ about redis at all.
 ## Adapters
 
 Adapters are the interface to the service you want your hubot to run on. This
-can be something like Campfire or IRC. There are a number of third party
+can be something like Campfire or IRC. In our case, we're using the [Slack adapter](https://github.com/tinyspeck/hubot-slack). There are a number of third party
 adapters that the community have contributed. Check
 [Hubot Adapters][hubot-adapters] for the available ones.
 
