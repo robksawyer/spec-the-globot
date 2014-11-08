@@ -26,9 +26,9 @@ prompt:
 
 Then you can interact with Spec by typing `spec help`.
 
-    spec> spec help
+    Hubot> spec help
 
-    spec> animate me <query> - The same thing as `image me`, except adds a few
+    Hubot> animate me <query> - The same thing as `image me`, except adds a few
     convert me <expression> to <units> - Convert expression to given units.
     help - Displays all of the help commands that Hubot knows about.
     ...
