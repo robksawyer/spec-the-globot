@@ -116,6 +116,14 @@ You'll need to edit the `Procfile` to set the name of your hubot.
 More detailed documentation can be found on the
 [deploying hubot onto Heroku][deploy-heroku] wiki page.
 
+
+## Environment Variables
+
+Spec depends on a few local environment variables. You can find these below. In order to run locally with these variables, you'll need to create a `.env` file. See the example env.template for syntax. After adding your environment variables the `.env`, you'll need to run `source .env` to load them. This will need to occur before running `bin/hubot`.
+
+    % HUBOT_HEROKU_KEEPALIVE_URL //Find more at https://github.com/hubot-scripts/hubot-heroku-keepalive
+    % BONUSLY_TOKEN //Find it at https://bonus.ly/api
+
 ## Alright, brain overload already. I'm ready to play
 
 Run the command below in the #general channel of [Slack](http://slack.com) to check it out. Note: The name 'spec' below matches whatever variable is set via the variable HUBOT\_SLACK\_BOTNAME.
