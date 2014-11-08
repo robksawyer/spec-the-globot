@@ -9,6 +9,9 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
+  
+   robot.hear /who are you(.*)/i, (msg) ->
+     msg.send "My full name is Spec and I'm a Globot. I help the Spec Global team with the menial tasks associated with building the tools that are speeding up campaign to market times by orders of magnitude."
 
    robot.hear /badger/i, (msg) ->
      msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
