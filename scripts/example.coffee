@@ -16,16 +16,16 @@ module.exports = (robot) ->
   robot.respond /hello$/i, (msg) ->
     robot.messageRoom '#general', 'hello there'
 
-  robot.hear /badger/i, (msg) ->
-    msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  # robot.hear /badger/i, (msg) ->
+  #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   
 
-  robot.respond /open the (.*) doors/i, (msg) ->
-     doorType = msg.match[1]
-     if doorType is "pod bay"
-       msg.reply "I'm afraid I can't let you do that."
-     else
-       msg.reply "Opening #{doorType} doors"
+  # robot.respond /open the (.*) doors/i, (msg) ->
+  #    doorType = msg.match[1]
+  #    if doorType is "pod bay"
+  #      msg.reply "I'm afraid I can't let you do that."
+  #    else
+  #      msg.reply "Opening #{doorType} doors"
 
   robot.hear /I like pie/i, (msg) ->
     msg.emote "makes a freshly baked pie"
@@ -81,33 +81,33 @@ module.exports = (robot) ->
       msg.send "Not annoying you right now, am I?"
   
   
-  robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
-    room   = req.params.room
-    data   = JSON.parse req.body.payload
-    secret = data.secret
+  # robot.router.post '/hubot/chatsecrets/:room', (req, res) ->
+  #   room   = req.params.room
+  #   data   = JSON.parse req.body.payload
+  #   secret = data.secret
   
-    robot.messageRoom room, "I have a secret: #{secret}"
+  #   robot.messageRoom room, "I have a secret: #{secret}"
   
-    res.send 'OK'
+  #   res.send 'OK'
   
-   robot.error (err, msg) ->
-     robot.logger.error "DOES NOT COMPUTE"
+  #  robot.error (err, msg) ->
+  #    robot.logger.error "DOES NOT COMPUTE"
   
   #   if msg?
   #     msg.reply "DOES NOT COMPUTE"
   
-  robot.respond /have a soda/i, (msg) ->
-    # Get number of sodas had (coerced to a number).
-    sodasHad = robot.brain.get('totalSodas') * 1 or 0
+  # robot.respond /have a soda/i, (msg) ->
+  #   # Get number of sodas had (coerced to a number).
+  #   sodasHad = robot.brain.get('totalSodas') * 1 or 0
   
-    if sodasHad > 4
-      msg.reply "I'm too fizzy.."
+  #   if sodasHad > 4
+  #     msg.reply "I'm too fizzy.."
   
-    else
-      msg.reply 'Sure!'
+  #   else
+  #     msg.reply 'Sure!'
   
-      robot.brain.set 'totalSodas', sodasHad+1
+  #     robot.brain.set 'totalSodas', sodasHad+1
   
-  robot.respond /sleep it off/i, (msg) ->
-    robot.brain.set 'totalSodas', 0
-    robot.respond 'zzzzz'
+  # robot.respond /sleep it off/i, (msg) ->
+  #   robot.brain.set 'totalSodas', 0
+  #   robot.respond 'zzzzz'
