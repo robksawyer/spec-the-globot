@@ -119,7 +119,7 @@ module.exports = (robot) ->
             for result in data.result
               bonuses += "#{i++}. #{result.giver.short_name} gave 💦 #{result.amount} equity point(s) to #{result.receiver.short_name} #{result.reason}\n"
 
-            msg.send "The following is a list of the latest 10 💦 equity points given:\n#{bonuses}"
+            msg.send "The following is a list of the latest 💦 10 equity points given:\n#{bonuses}"
 
 
 
