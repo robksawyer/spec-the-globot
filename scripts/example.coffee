@@ -13,8 +13,8 @@ module.exports = (robot) ->
   robot.hear /who are you(.*)/i, (msg) ->
     msg.send "My full name is Spec and I'm a Globot. I help the Spec Global team with the menial tasks associated with building the tools that are speeding up campaign to market times by orders of magnitude."
 
-  robot.respond /hello$/i, (msg) ->
-    robot.messageRoom '#general', 'hello there'
+  # robot.respond /hello$/i, (msg) ->
+  #   robot.messageRoom '#general', 'hello there'
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
@@ -27,16 +27,16 @@ module.exports = (robot) ->
   #    else
   #      msg.reply "Opening #{doorType} doors"
 
-  robot.hear /I like pie/i, (msg) ->
-    msg.emote "makes a freshly baked pie"
+  # robot.hear /I like pie/i, (msg) ->
+  #   msg.emote "makes a freshly baked pie"
 
-  lulz = ['lol', 'rofl', 'lmao']
+  # lulz = ['lol', 'rofl', 'lmao']
   
-  robot.respond /lulz/i, (msg) ->
-    msg.send msg.random lulz
+  # robot.respond /lulz/i, (msg) ->
+  #   msg.send msg.random lulz
   
-  robot.topic (msg) ->
-    msg.send "#{msg.message.text}? That's a Paddlin'"
+  # robot.topic (msg) ->
+  #   msg.send "#{msg.message.text}? That's a Paddlin'"
   
   
   enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
