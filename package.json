@@ -23,7 +23,7 @@
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.1",
     "hubot-slack": "^2.2.0",
-    "hubot-starven": ">=0.0.52",
+    "hubot-starven": ">=0.0.56",
     "hubot-youtube": "^0.1.2",
     "jsdom": "^1.2.1"
   },
